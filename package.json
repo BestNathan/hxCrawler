@@ -1,0 +1,33 @@
+{
+  "name": "hxcrawler",
+  "version": "1.0.0",
+  "description": "hx crawler prectice",
+  "main": "index.js",
+  "dependencies": {
+    "crazy-crawler": "^0.3.0",
+    "ora": "2.0.0",
+    "uuid": "3.2.1",
+    "node-schedule": "1.3.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "queryTime": "node bin/queryGiftTime.js",
+    "grab": "node bin/grabCupon.js 36600 ../userfiles/grabUsers.txt 0-58-17-*-*-*",
+    "getPrize": "node bin/queryAndGet.js 1026 61626 ../userfiles/queryPrizes.txt",
+    "queryAll": "node bin/queryPrizes.js 1026 ../userfiles/all.txt",
+    "query": "node bin/queryPrizes.js 1026 ../userfiles/queryPrizes.txt",
+    "queryCoupon": "node bin/queryCoupon.js ../userfiles/queryPrizes.txt",
+    "queryActivity": "rd /s/q activities && rd /s/q activities-id && rd /s/q activities-name && node bin/queryActivity.js 950 1050",
+    "lottery": "node bin/lottery.js 1042 10 ../userfiles/all.txt",
+    "addr": "node bin/addr.js ../userfiles/grabUsers.txt",
+    "fastgrab": "node bin/fastgrab.js 20680550 1008905 2399 51 ../userfiles/b.txt 21251 130100",
+    "notice": "110100 130100",
+    "queryOrder": "node bin/queryOrder.js ../userfiles/grabUsers.txt" 
+  },
+  "keywords": [
+    "crawler",
+    "crazyCrawler"
+  ],
+  "author": "Nathan",
+  "license": "MIT"
+}
